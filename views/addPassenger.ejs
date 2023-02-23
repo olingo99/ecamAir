@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Encodage des passagers</h1>
+    <div>
+        <form action="/confirmPassenger" method="post" class="form">
+            <% for( let index=0; index < nb_passenger; index++ ) { %>
+
+                <div>
+                    <label for="Nom<%=index%>">Nom</label>
+                    <input type="text" name="Nom" id="Nom<%=index%>">
+                </div>
+                <div>
+                    <label for="Age<%=index%>">Age</label>
+                    <input type="number" name="Age" id="Age<%=index%>">
+                </div>
+
+                <% } %>
+
+                <div>
+                    <input type="submit" value="Etape suivante">
+                    <input type="submit" value="Annuler" formaction="/">
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>

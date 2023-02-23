@@ -1,0 +1,38 @@
+/* generate a css style using these instructions 
+- Corps de la page
+o Largeur : 500px, hauteur : 300px
+o Style de texte Arial
+o Taille du texte 12px
+o Bordure 1px noire, trait plein
+o Marge intérieure et extérieur 10px
+o Couleur d’arrière plan : lightblue
+- Formulaire
+o Bordure 1px noire, trait plein
+o Largeur : 400px ;
+o Marge intérieure et extérieur 10px
+- Label et input du formulaire
+o Aligné
+o Marge intérieure 10px
+
+*>*/
+
+body {
+    width: 500px;
+    height: 300px;
+    font-family: Arial;
+    font-size: 12px;
+    border: 1px solid black;
+    margin: 10px;
+    background-color: lightblue;
+}
+
+form {
+    border: 1px solid black;
+    width: 400px;
+    margin: 10px;
+}
+
+label, input {
+    display: inline-block;
+    margin: 10px;
+}

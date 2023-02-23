@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Validation des reservations</h1>
+    <h2>Destination : <%=destination%>
+    </h2>
+    <h2>Liste des passagers</h2>
+    <div>
+        <ul>
+            <% for( let index=0; index < voyageurs.length; index++ ) { %>
+                <li>
+                    <label>Nom : <%=voyageurs[index].name%></label>
+                    <label>Age : <%=voyageurs[index].age%></label>
+                </li>
+                <% } %>
+        </ul>
+    </div>
+    <form action="/final" method="post" class="form">
+        <input type="submit" value="Etape suivante">
+        <input type="submit" value="Annuler" formaction="/">
+    </form>
+</body>
+
+</html>
