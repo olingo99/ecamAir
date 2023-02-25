@@ -10,30 +10,31 @@
 <body>
     <h1>Reservation</h1>
     <div>
-        <form action="/newVoyage" method="post" class="form">
+        <form action="/newVoyage" method="post" class="form1">
 
             <div>
                 <label for="destination">Destination</label>
-                <input type="text" name="destination" id="destination", value="<%=destination%>">
+                <input type="text" name="destination" id="destination">
             </div>
             <div>
                 <label for="nb_passenger">Nombre de passagers</label> 
-                <input type="number" name="nb_passenger" id="nb_passenger" value="<%=nb_passenger%>">
+                <input type="number" name="nb_passenger" id="nb_passenger">
             </div>
            
             <div>
                 <label for="insurance">Assurance</label>
-                <input type="checkbox" name="insurance" id="insurance" <%= insurance ? "checked" : "" %>>
+                <input type="checkbox" name="insurance" id="insurance">
             </div>
 
             <div>
-                <input type="submit" value="submit">
+                <input type="submit" value="Etape suivante">
             </div>
             
         </form>
-        <button onclick="computeTotal()">Compute total</button>
-        <label >Total:</label>
-        <label id = "displayTotal"><%=total%></label>
+        <button onclick="computeTotal()">Calculer le total</button>
+        <br>
+        <label >Total de la réservation:</label>
+        <label id = "displayTotal">0</label>
         
     </div>
 </body>

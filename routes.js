@@ -9,8 +9,6 @@ router.get('/', homeController.home);
 
 router.post('/newVoyage',homeController.renderAddPassenger);
 
-router.post('/computeTotal', homeController.computeTotal);
-
 router.post('/', homeController.home);
 
 router.post('/confirmPassenger', passengerController.confirmPassenger);
