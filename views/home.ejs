@@ -28,13 +28,14 @@
 
             <div>
                 <input type="submit" value="submit">
-           
-                <input type="submit" value="computeTotal" formaction="/computeTotal">
-                <label id = "displayTotal"><%=total%></label>
             </div>
             
         </form>
+        <button onclick="computeTotal()">Compute total</button>
+        <label >Total:</label>
+        <label id = "displayTotal"><%=total%></label>
         
     </div>
 </body>
+<script src="script/home.js"></script>
 </html>
